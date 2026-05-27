@@ -1,0 +1,35 @@
+{
+  "name": "WonderTone Music Studio",
+  "slogan": "Rooted in Music. Driven by Curiosity.",
+  "tagline_main": "Classical piano & violin lessons for curious young musicians",
+  "tagline_sub": "Bilingual instruction in English & Mandarin · Ages 4+ · Exam Prep",
+  "email": "hello@wondertonemusic.com",
+  "phone": "(XXX) XXX-XXXX",
+  "address": "Greater Los Angeles Area, CA",
+  "address_detail": "In-studio lessons · Online available",
+  "hours_weekday": "Mon – Fri: 3:00 pm – 8:00 pm",
+  "hours_weekend": "Sat – Sun: 9:00 am – 6:00 pm",
+  "instagram_url": "",
+  "youtube_url": "",
+  "google_maps_embed": "",
+  "contact_desc": "We offer a complimentary trial lesson for all new students. Come meet our teachers, try an instrument, and see if WonderTone is the right fit for your family — no commitment required.",
+  "about_paragraphs": [
+    "WonderTone Music Studio was founded on a simple belief: every child deserves music education that is both rigorous and joyful. We specialize in classical piano and violin, offering a nurturing environment where students build real technique alongside a genuine love for music.",
+    "We teach in both English and Mandarin (双语教学), and tailor every lesson to each student's unique pace, personality, and goals — whether they're stepping up to the piano for the very first time, or preparing for Certificate of Merit exams.",
+    "Our approach is encouraging, structured, and student-centered. Parents trust us to be patient and professional. Students trust us to make music feel alive."
+  ],
+  "practice_tips": [
+    {
+      "title": "The 20-Minute Rule",
+      "text": "Short, focused practice sessions every day far outperform long sessions twice a week. Aim for 20–30 minutes daily with intentional, slow repetition of tricky passages."
+    },
+    {
+      "title": "Slow Before Fast",
+      "text": "Always start new passages slowly enough to play them correctly. Speed follows accuracy — never the other way around. Use a metronome, even for slow practice."
+    },
+    {
+      "title": "Listen Actively",
+      "text": "Listen to recordings of your current pieces and other classical music often. Your ears absorb phrasing, tone, and expression that transfers directly to your playing."
+    }
+  ]
+}

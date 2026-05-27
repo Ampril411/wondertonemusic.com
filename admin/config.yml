@@ -1,0 +1,106 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+
+  # ── STUDIO SETTINGS ──────────────────────────────────────────────
+  - name: "settings"
+    label: "⚙️ Studio Settings"
+    files:
+      - label: "Studio Info & Contact"
+        name: "studio"
+        file: "_data/studio.json"
+        fields:
+          - { label: "Studio Name", name: "name", widget: "string" }
+          - { label: "Slogan (shown in hero quotes)", name: "slogan", widget: "string" }
+          - { label: "Tagline — main line", name: "tagline_main", widget: "string" }
+          - { label: "Tagline — sub line", name: "tagline_sub", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Phone", name: "phone", widget: "string" }
+          - { label: "Address (short)", name: "address", widget: "string" }
+          - { label: "Address detail (e.g. In-studio · Online)", name: "address_detail", widget: "string" }
+          - { label: "Hours — Weekdays", name: "hours_weekday", widget: "string" }
+          - { label: "Hours — Weekends", name: "hours_weekend", widget: "string" }
+          - { label: "Instagram URL (leave blank to hide button)", name: "instagram_url", widget: "string", required: false }
+          - { label: "YouTube URL (leave blank to hide button)", name: "youtube_url", widget: "string", required: false }
+          - { label: "Google Maps Embed Code (paste full <iframe>...)</iframe>)", name: "google_maps_embed", widget: "text", required: false }
+          - { label: "Contact — intro paragraph (under 'Book a Complimentary Trial')", name: "contact_desc", widget: "text" }
+          - label: "About — paragraphs (Our Story section)"
+            name: "about_paragraphs"
+            widget: "list"
+            field: { label: "Paragraph", name: "item", widget: "text" }
+          - label: "Practice Tips"
+            name: "practice_tips"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Text", name: "text", widget: "text" }
+
+  # ── PROGRAMS ─────────────────────────────────────────────────────
+  - name: "programs"
+    label: "📚 Programs / Courses"
+    folder: "_programs"
+    create: true
+    slug: "{{fields.order}}-{{slug}}"
+    identifier_field: "name"
+    fields:
+      - { label: "Display Order (1 = first)", name: "order", widget: "number", default: 10 }
+      - { label: "Published (uncheck to hide)", name: "published", widget: "boolean", default: true }
+      - { label: "Icon (emoji)", name: "icon", widget: "string", default: "🎵" }
+      - { label: "Course Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: { label: "Tag", name: "item", widget: "string" }
+
+  # ── TEACHERS ─────────────────────────────────────────────────────
+  - name: "teachers"
+    label: "👩‍🏫 Teachers"
+    folder: "_teachers"
+    create: true
+    identifier_field: "name"
+    fields:
+      - { label: "Display Order", name: "order", widget: "number", default: 1 }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Role / Title", name: "role", widget: "string" }
+      - { label: "Photo", name: "photo", widget: "image" }
+      - label: "Bio Paragraphs"
+        name: "bio"
+        widget: "list"
+        field: { label: "Paragraph", name: "item", widget: "text" }
+      - label: "Credentials"
+        name: "credentials"
+        widget: "list"
+        field: { label: "Credential", name: "item", widget: "string" }
+
+  # ── TESTIMONIALS ─────────────────────────────────────────────────
+  - name: "testimonials"
+    label: "💬 Parent Reviews"
+    folder: "_testimonials"
+    create: true
+    identifier_field: "author"
+    fields:
+      - { label: "Display Order", name: "order", widget: "number", default: 10 }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+      - { label: "Stars (1–5)", name: "stars", widget: "number", min: 1, max: 5, default: 5 }
+      - { label: "Review Text", name: "text", widget: "text" }
+      - { label: "Author Name", name: "author", widget: "string" }
+      - { label: "Role (e.g. Parent of piano student, age 7)", name: "role", widget: "string" }
+
+  # ── GALLERY ──────────────────────────────────────────────────────
+  - name: "gallery"
+    label: "🖼️ Gallery Photos"
+    folder: "_gallery"
+    create: true
+    identifier_field: "caption"
+    fields:
+      - { label: "Display Order (lower = earlier)", name: "order", widget: "number", default: 10 }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Caption", name: "caption", widget: "string" }

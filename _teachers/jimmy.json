@@ -1,0 +1,9 @@
+{
+  "order": 2,
+  "published": true,
+  "name": "Jimmy",
+  "role": "Violin Instructor · Ensemble Coach",
+  "photo": "images/door-jimmy.jpg",
+  "bio": ["Jimmy is a passionate violinist and chamber music enthusiast whose love for the instrument is genuinely contagious. He specializes in classical and contemporary violin technique, and has a particular talent for helping students develop beautiful tone and confident bow technique.", "Jimmy coaches our chamber music ensembles and believes that playing together is one of the most transformative musical experiences a student can have."],
+  "credentials": ["Bachelor of Music, Violin Performance — California State University, Fullerton","Active performer in chamber and orchestral settings","Suzuki-informed pedagogy · Youth ensemble specialist","Bilingual instruction: English & Mandarin"]
+}
