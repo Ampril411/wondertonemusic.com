@@ -17,6 +17,7 @@ collections:
       - label: "Studio Info & Contact"
         name: "studio"
         file: "_data/studio.json"
+        format: json
         fields:
           - { label: "Studio Name", name: "name", widget: "string" }
           - { label: "Slogan (shown in hero quotes)", name: "slogan", widget: "string" }
@@ -25,14 +26,14 @@ collections:
           - { label: "Email", name: "email", widget: "string" }
           - { label: "Phone", name: "phone", widget: "string" }
           - { label: "Address (short)", name: "address", widget: "string" }
-          - { label: "Address detail (e.g. In-studio · Online)", name: "address_detail", widget: "string" }
+          - { label: "Address detail", name: "address_detail", widget: "string" }
           - { label: "Hours — Weekdays", name: "hours_weekday", widget: "string" }
           - { label: "Hours — Weekends", name: "hours_weekend", widget: "string" }
-          - { label: "Instagram URL (leave blank to hide button)", name: "instagram_url", widget: "string", required: false }
-          - { label: "YouTube URL (leave blank to hide button)", name: "youtube_url", widget: "string", required: false }
-          - { label: "Google Maps Embed Code (paste full <iframe>...)</iframe>)", name: "google_maps_embed", widget: "text", required: false }
-          - { label: "Contact — intro paragraph (under 'Book a Complimentary Trial')", name: "contact_desc", widget: "text" }
-          - label: "About — paragraphs (Our Story section)"
+          - { label: "Instagram URL (leave blank to hide)", name: "instagram_url", widget: "string", required: false }
+          - { label: "YouTube URL (leave blank to hide)", name: "youtube_url", widget: "string", required: false }
+          - { label: "Google Maps Embed Code", name: "google_maps_embed", widget: "text", required: false }
+          - { label: "Contact intro paragraph", name: "contact_desc", widget: "text" }
+          - label: "About — paragraphs"
             name: "about_paragraphs"
             widget: "list"
             field: { label: "Paragraph", name: "item", widget: "text" }
@@ -45,14 +46,15 @@ collections:
 
   # ── PROGRAMS ─────────────────────────────────────────────────────
   - name: "programs"
-    label: "📚 Programs / Courses"
+    label: "📚 Programs"
     folder: "_programs"
     create: true
-    slug: "{{fields.order}}-{{slug}}"
+    extension: json
+    format: json
     identifier_field: "name"
     fields:
-      - { label: "Display Order (1 = first)", name: "order", widget: "number", default: 10 }
-      - { label: "Published (uncheck to hide)", name: "published", widget: "boolean", default: true }
+      - { label: "Display Order", name: "order", widget: "number", default: 10 }
+      - { label: "Published", name: "published", widget: "boolean", default: true }
       - { label: "Icon (emoji)", name: "icon", widget: "string", default: "🎵" }
       - { label: "Course Name", name: "name", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
@@ -66,6 +68,8 @@ collections:
     label: "👩‍🏫 Teachers"
     folder: "_teachers"
     create: true
+    extension: json
+    format: json
     identifier_field: "name"
     fields:
       - { label: "Display Order", name: "order", widget: "number", default: 1 }
@@ -87,6 +91,8 @@ collections:
     label: "💬 Parent Reviews"
     folder: "_testimonials"
     create: true
+    extension: json
+    format: json
     identifier_field: "author"
     fields:
       - { label: "Display Order", name: "order", widget: "number", default: 10 }
@@ -94,16 +100,18 @@ collections:
       - { label: "Stars (1–5)", name: "stars", widget: "number", min: 1, max: 5, default: 5 }
       - { label: "Review Text", name: "text", widget: "text" }
       - { label: "Author Name", name: "author", widget: "string" }
-      - { label: "Role (e.g. Parent of piano student, age 7)", name: "role", widget: "string" }
+      - { label: "Role", name: "role", widget: "string" }
 
   # ── GALLERY ──────────────────────────────────────────────────────
   - name: "gallery"
     label: "🖼️ Gallery Photos"
     folder: "_gallery"
     create: true
+    extension: json
+    format: json
     identifier_field: "caption"
     fields:
-      - { label: "Display Order (lower = earlier)", name: "order", widget: "number", default: 10 }
+      - { label: "Display Order", name: "order", widget: "number", default: 10 }
       - { label: "Published", name: "published", widget: "boolean", default: true }
       - { label: "Photo", name: "image", widget: "image" }
       - { label: "Caption", name: "caption", widget: "string" }
