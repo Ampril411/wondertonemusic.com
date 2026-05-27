@@ -251,6 +251,7 @@ footer{background:var(--beige);padding:2.5rem 3rem;display:flex;align-items:cent
   .social-links{flex-direction:column;}
 }
 </style>
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
 
@@ -746,6 +747,17 @@ function submitForm() {
   }
   document.getElementById('contactForm').style.display = 'none';
   document.getElementById('formSuccess').style.display = 'block';
+}
+</script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
 }
 </script>
 </body>

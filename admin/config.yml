@@ -2,6 +2,9 @@ backend:
   name: git-gateway
   branch: main
 
+site_url: https://wondertonemusic.com
+display_url: https://wondertonemusic.com
+
 media_folder: "images"
 public_folder: "/images"
 
