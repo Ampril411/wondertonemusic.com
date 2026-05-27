@@ -460,7 +460,9 @@ footer{background:var(--beige);padding:2.5rem 3rem;display:flex;align-items:cent
       </div>
 
       <div class="contact-form-wrap fade-up delay-1">
-        <div id="contactForm">
+        <form id="contactForm" name="trial-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="trial-inquiry">
+          <p style="display:none"><input name="bot-field"></p>
           <div class="form-title">Trial Lesson Inquiry</div>
           <div class="form-row">
             <div class="fg"><label for="parentName">Parent Name</label><input type="text" id="parentName" placeholder="Your name"></div>
@@ -497,9 +499,9 @@ footer{background:var(--beige);padding:2.5rem 3rem;display:flex;align-items:cent
             </select>
           </div>
           <div class="fg"><label for="message">Anything else you'd like us to know</label><textarea id="message" placeholder="Goals, schedule preferences, questions…"></textarea></div>
-          <button class="form-btn" onclick="submitForm()">Send Inquiry — Book My Complimentary Trial</button>
+          <button type="button" class="form-btn" onclick="submitForm()">Send Inquiry — Book My Complimentary Trial</button>
           <p class="form-note">We respond within 24 hours · Complimentary trial · No commitment required</p>
-        </div>
+        </form>
         <div class="form-success" id="formSuccess">
           <div style="font-size:3rem">🎵</div>
           <h3>Message received!</h3>
@@ -745,8 +747,20 @@ function submitForm() {
     alert('Please fill in your name, email, and instrument interest to continue.');
     return;
   }
-  document.getElementById('contactForm').style.display = 'none';
-  document.getElementById('formSuccess').style.display = 'block';
+  const form = document.getElementById('contactForm');
+  const formData = new FormData(form);
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(formData).toString()
+  })
+  .then(() => {
+    form.style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  })
+  .catch(() => {
+    alert('Something went wrong. Please email us directly at hello@wondertonemusic.com');
+  });
 }
 </script>
 <script>
