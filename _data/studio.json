@@ -1,23 +1,22 @@
 {
-  "name": "WonderTone Music Studio",
-  "slogan": "Rooted in Music. Driven by Curiosity.",
-  "tagline_main": "Classical piano & violin lessons for curious young musicians",
-  "tagline_sub": "Bilingual instruction in English & Mandarin · Ages 4+ · Exam Prep",
-  "email": "hello@wondertonemusic.com",
-  "phone": "(XXX) XXX-XXXX",
-  "address": "Greater Los Angeles Area, CA",
-  "address_detail": "In-studio lessons · Online available",
-  "hours_weekday": "Mon – Fri: 3:00 pm – 8:00 pm",
-  "hours_weekend": "Sat – Sun: 9:00 am – 6:00 pm",
   "instagram_url": "",
-  "youtube_url": "",
-  "google_maps_embed": "",
+  "tagline_main": "Classical piano & violin lessons for curious young musicians",
+  "name": "WonderTone Music Studio",
+  "phone": "(732)-331-9280 (626)-265-5748",
+  "tagline_sub": "Bilingual instruction in English & Mandarin · Ages 4+ · Exam Prep",
   "contact_desc": "We offer a complimentary trial lesson for all new students. Come meet our teachers, try an instrument, and see if WonderTone is the right fit for your family — no commitment required.",
+  "youtube_url": "",
+  "address": "Greater Los Angeles Area, CA",
   "about_paragraphs": [
     "WonderTone Music Studio was founded on a simple belief: every child deserves music education that is both rigorous and joyful. We specialize in classical piano and violin, offering a nurturing environment where students build real technique alongside a genuine love for music.",
     "We teach in both English and Mandarin (双语教学), and tailor every lesson to each student's unique pace, personality, and goals — whether they're stepping up to the piano for the very first time, or preparing for Certificate of Merit exams.",
     "Our approach is encouraging, structured, and student-centered. Parents trust us to be patient and professional. Students trust us to make music feel alive."
   ],
+  "google_maps_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3303.861469970235!2d-117.54759972385646!3d34.09868911527572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c34baae1313385%3A0x8420d63e8f343018!2sWonderTone%20Music%20Studio!5e0!3m2!1sen!2sus!4v1783820279613!5m2!1sen!2sus\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"strict-origin-when-cross-origin\"></iframe>",
+  "hours_weekend": "Sat – Sun: 9:00 am – 6:00 pm",
+  "hours_weekday": "Mon – Fri: 3:00 pm – 8:00 pm",
+  "address_detail": "In-studio lessons · Online available",
+  "email": "wondertoneacademy@gmail.com",
   "practice_tips": [
     {
       "title": "The 20-Minute Rule",
@@ -31,5 +30,6 @@
       "title": "Listen Actively",
       "text": "Listen to recordings of your current pieces and other classical music often. Your ears absorb phrasing, tone, and expression that transfers directly to your playing."
     }
-  ]
+  ],
+  "slogan": "Rooted in Music. Driven by Curiosity."
 }
