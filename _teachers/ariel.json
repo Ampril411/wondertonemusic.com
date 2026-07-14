@@ -3,7 +3,16 @@
   "published": true,
   "name": "Ariel Qian",
   "role": "Piano Instructor · Studio Director",
-  "photo": "images/door-ariel.jpg",
-  "bio": ["Ariel brings warmth, precision, and creativity to every lesson. With a deep background in classical piano performance and pedagogy, she has a gift for connecting with students of all ages — from tiny beginners discovering the keyboard for the first time, to teens preparing for competitive examinations.", "Her teaching style is encouraging and adaptive, always finding the path that best matches each student's learning personality. She teaches in both English and Mandarin (双语教学)."],
-  "credentials": ["Bachelor of Music, Piano Performance — California State University, Fullerton","Member, Music Teachers' National Association (MTNA)","Member, Music Teachers' Association of California (MTAC)","Certificate of Merit adjudicator-trained · 10+ years of instruction","Bilingual instruction: English & Mandarin"]
+  "photo": "/images/img_5710.jpg",
+  "bio": [
+    "Ariel brings warmth, precision, and creativity to every lesson. With a deep background in classical piano performance and pedagogy, she has a gift for connecting with students of all ages — from tiny beginners discovering the keyboard for the first time, to teens preparing for competitive examinations.",
+    "Her teaching style is encouraging and adaptive, always finding the path that best matches each student's learning personality. She teaches in both English and Mandarin (双语教学)."
+  ],
+  "credentials": [
+    "Bachelor of Music, Piano Performance — California State University, Fullerton",
+    "Member, Music Teachers' National Association (MTNA)",
+    "Member, Music Teachers' Association of California (MTAC)",
+    "Certificate of Merit adjudicator-trained · 10+ years of instruction",
+    "Bilingual instruction: English & Mandarin"
+  ]
 }
